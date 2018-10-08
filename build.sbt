@@ -17,7 +17,7 @@ libraryDependencies += ("org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.
 libraryDependencies += "org.apache.kafka" % "kafka-clients" % "1.1.1"
 
 
-//assemblyMergeStrategy in assembly := {
-// case PathList("META-INF", xs @ _*) => MergeStrategy.discard
-// case x => MergeStrategy.first
-//}
+assemblyMergeStrategy in assembly := {
+ case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+ case x => MergeStrategy.first
+}
