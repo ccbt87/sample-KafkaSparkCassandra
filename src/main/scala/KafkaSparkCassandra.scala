@@ -83,7 +83,7 @@ object KafkaSparkCassandra {
 
     // Now we have set up the processing logic it's time to do some processing
     ssc.start() // start the streaming context
-    timer.start()
+    //timer.start()
     ssc.awaitTermination() // block while the context is running (until it's stopped by the timer)
   }
 }
